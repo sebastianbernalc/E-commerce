@@ -1,0 +1,163 @@
+.product_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; // Ajusta el espacio entre los productos
+}
+
+.product {
+  width: 217px; // Adjust the width to fit more elements in each row
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; // Opcional, para agregar un borde alrededor del producto
+  padding: 10px;
+  box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
+  justify-content: center;
+}
+
+.image_product {
+  position: relative; /* Hace que .image_product sea un contenedor de posicionamiento */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.image_product img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+.image_product:hover img {
+  opacity: 0.8;
+}
+
+.icon_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image_product:hover .icon_overlay {
+  opacity: 1;
+}
+
+.icon {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  
+}
+
+.image_product .tag {
+  position: absolute;
+  top: 0px; /* Ajusta la distancia desde la parte superior */
+  left: 2px; /* Ajusta la distancia desde el lado izquierdo */
+  background-color: rgb(227, 204, 50); /* Color de fondo para la etiqueta (ajusta según sea necesario) */
+  color: #000000; /* Color del texto (ajusta según sea necesario) */
+  padding: 5px 10px;
+}
+
+.images_list {
+  display: flex;
+  gap: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.higher_image {
+  width: 328px;
+  height: 592px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; // Opcional, para agregar un borde alrededor del producto
+  padding: 10px;
+  box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
+  justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.product h3 {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 10px;
+  margin: 0;
+  margin-top: 2px;
+}
+
+.higher_image h3 {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.higher_image p {
+  font-size: 10px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.original_price {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+.discounted_price {
+  color: #ff6600;
+  margin-right: 10px;
+}
+
+.buy_button {
+  background-color: #ff6600; /* Ajusta el color según tu preferencia */
+  color: #fff;
+  border: none;
+  margin-top: 10px;
+  margin-left: 18px;
+  width: 240px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tag {
+  position: absolute;
+  top: 0px; /* Ajusta la distancia desde la parte superior */
+  left: 2px; /* Ajusta la distancia desde el lado izquierdo */
+  background-color: rgb(227, 204, 50); /* Color de fondo para la etiqueta (ajusta según sea necesario) */
+  color: #000000; /* Color del texto (ajusta según sea necesario) */
+  padding: 5px 10px;
+  font-size: 8px;
+}
+  
+.image_main{
+  position: relative; /* Hace que .image_product sea un contenedor de posicionamiento */
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.image_main img {
+  transition: opacity 0.3s ease;
+}
+.image_main:hover img {
+  opacity: 0.8;
+}
+
+.image_main:hover .icon_overlay {
+  opacity: 1;
+}

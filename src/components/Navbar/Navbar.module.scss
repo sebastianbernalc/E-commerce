@@ -42,3 +42,16 @@
 .card{
     display: block;
 }
+
+.icon_background{
+
+        width: 3rem; /* w-12 equivale a 3rem (48px) */
+        height: 3rem; /* h-12 equivale a 3rem (48px) */
+        display: flex; /* flex */
+        align-items: center; /* items-center */
+        justify-content: center; /* justify-center */
+        border-radius: 9999px; /* rounded-full (border-radius para círculo completo) */
+        color: #f9fafb; /* text-slate-100 (código de color del slate-100) */
+        font-weight: 500; /* font-medium (font-weight: 500) */
+        background-color: #f9fafb; /* bg-slate-100 (código de color del slate-100) */
+}

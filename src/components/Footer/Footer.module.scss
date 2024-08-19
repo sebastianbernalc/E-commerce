@@ -6,13 +6,15 @@
 
 .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row; /* Asegura que las columnas estén en fila */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan si son demasiadas para una fila */
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 
 .socialMedia {
     max-width: 1200px;
@@ -45,4 +47,91 @@
 
 .copyRight p {
     font-size: 0.8rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px; /* Asegura que las columnas tengan un tamaño mínimo */
+    padding: 1rem;
+}
+
+.download img {
+    max-width: 100%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción */
+    
+    padding-top: 6px;
+}
+
+.column {
+    padding: 25px 0; /* Padding superior e inferior para la columna */
+}
+
+.column h3 {
+    margin-bottom: 25px; /* Espacio entre el título y los enlaces */
+    color: rgba(255, 255, 255); /* Color del título con opacidad */
+    font-size: 14px;
+}
+
+.column a {
+    display: block; /* Hace que cada enlace ocupe toda la línea */
+    margin-bottom: 10px; /* Espacio entre los enlaces */
+    color: rgba(255, 255, 255, 0.6); /* Color de los enlaces con opacidad */
+    text-decoration: none; /* Elimina el subrayado por defecto *  */
+    font-size: 11px;
+}
+
+.column a:hover {
+    color: rgba(255, 255, 255, 1); /* Aumenta la opacidad al 100% al pasar el cursor */
+}
+
+
+.tagContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; // Espacio entre los tags
+    
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    line-height: 1; /* Ajusta según sea necesario */
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.logo h3 {
+    margin: 0; /* Elimina márgenes para evitar desalineación */
+    line-height: 1; /* Ajusta según sea necesario */
+    vertical-align: middle; /* Alinea verticalmente el texto */
+    font-size: 20px;
+}
+
+.column p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+}
+
+.column h1 {
+    color: rgba(255, 255, 255); 
+    font-size: 14px;
+}
+
+.info {
+    padding: 10px; /* Ajusta el valor según tus necesidades */
+    margin-bottom: 10px; /* Espacio entre cada div */
+    color: rgba(255, 255, 255, 1);
+}
+.icon_background{
+
+    width: 3rem; /* w-12 equivale a 3rem (48px) */
+    height: 3rem; /* h-12 equivale a 3rem (48px) */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    border-radius: 9999px; /* rounded-full (border-radius para círculo completo) */
+    color: #f9fafb; /* text-slate-100 (código de color del slate-100) */
+    font-weight: 500; /* font-medium (font-weight: 500) */
+    background-color: #f9fafb; /* bg-slate-100 (código de color del slate-100) */
 }
