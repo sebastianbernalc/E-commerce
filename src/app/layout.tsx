@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google"; // Importa solo Montserrat
 import Providers from "@/components/Providers";
 import "./globals.scss";
 import { Analytics } from '@vercel/analytics/react';
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ subsets: ["latin"]}); // Define Montserrat
 
 export const metadata: Metadata = {
     title: "LeanShop",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="es">
-            <body className={inter.className}>
+            <body className={montserrat.className}> {/* Aplica solo Montserrat */}
                 <Providers>
                     {children}
                     <Analytics />

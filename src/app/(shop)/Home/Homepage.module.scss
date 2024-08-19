@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px; // Ajusta el espacio entre los productos
+  
 }
 
 .product {
@@ -13,6 +14,7 @@
   padding: 10px;
   box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 }
 
 .image_product {
@@ -75,6 +77,7 @@
   gap: 5px;
   margin-left: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .higher_image {
@@ -86,6 +89,7 @@
   padding: 10px;
   box-sizing: border-box; // Asegura que el padding no afecte el tamaño total
   justify-content: center; /* Centra los elementos verticalmente */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .product h3 {
