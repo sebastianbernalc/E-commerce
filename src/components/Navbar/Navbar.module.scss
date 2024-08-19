@@ -1,4 +1,4 @@
-.root{
+.root {
     position: sticky;
     top: 0;
     left: 0;
@@ -6,7 +6,7 @@
     z-index: 1000;
 }
 
-.header{
+.header {
     position: relative;
     height: 4rem;
     margin-left: auto;
@@ -15,7 +15,7 @@
     color: white;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +27,7 @@
     margin-right: auto;
 }
 
-.brand{
+.brand {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,19 +39,41 @@
     font-weight: bold;
 }
 
-.card{
-    display: block;
+.card {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el contenido */
+    position: relative; /* Necesario para posicionar el contador de artículos */
 }
 
-.icon_background{
+.icon_background {
+    width: 3rem; /* w-12 equivale a 3rem (48px) */
+    height: 3rem; /* h-12 equivale a 3rem (48px) */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    border-radius: 9999px; /* rounded-full (border-radius para círculo completo) */
+    color: #f9fafb; /* text-slate-100 (código de color del slate-100) */
+    font-weight: 500; /* font-medium (font-weight: 500) */
+    background-color: #f9fafb; /* bg-slate-100 (código de color del slate-100) */
+}
 
-        width: 3rem; /* w-12 equivale a 3rem (48px) */
-        height: 3rem; /* h-12 equivale a 3rem (48px) */
-        display: flex; /* flex */
-        align-items: center; /* items-center */
-        justify-content: center; /* justify-center */
-        border-radius: 9999px; /* rounded-full (border-radius para círculo completo) */
-        color: #f9fafb; /* text-slate-100 (código de color del slate-100) */
-        font-weight: 500; /* font-medium (font-weight: 500) */
-        background-color: #f9fafb; /* bg-slate-100 (código de color del slate-100) */
+.cart_link {
+    display: flex;
+    align-items: center;
+    position: relative; /* Necesario para posicionar el contador de artículos */
+}
+
+.cart_count {
+    position: absolute;
+    top: -10px; /* Ajusta según sea necesario */
+    right: -10px; /* Ajusta según sea necesario */
+    background-color: red; /* Color de fondo del contador */
+    color: white; /* Color del texto del contador */
+    border-radius: 50%; /* Asegura que sea circular */
+    width: 1.5rem; /* Ajusta según el tamaño deseado */
+    height: 1.5rem; /* Ajusta según el tamaño deseado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem; /* Ajusta según el tamaño del texto deseado */
 }

@@ -38,6 +38,13 @@
     align-items: center;
     justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
     gap: 10px; /* Espacio entre el botón y la imagen */
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 5px;
+    }
 }
 
 .price_item,
@@ -105,7 +112,7 @@
 .cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
     margin-top: 20px;
 
     .card_totals {
@@ -113,8 +120,8 @@
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        max-width: 1000px;
-        margin: 10px;
+        height: 300px;
+        margin-left: 10px;
 
     }
 
